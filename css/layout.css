@@ -1,0 +1,82 @@
+:root {
+    --txt-primary-color: #ffffff; /* колір основого тексту */
+    --txt-color-02: #000000; /* колір основого тексту на фоні (інверсія) */
+    --bg-color-01: #ffffff; /* колір фону 1 */
+    --bg-color-02: #000000; /* колір фону 2 */
+    --lnk-color-01: rgb(255, 255, 255); /* коілр покликань */
+    --lnk-color-02: #000000; /* коілр покликань hover */
+    --btn-color-01: #FF31A2; /* колір кнопки 1 */
+    --btn-color-02: #6b6b6b; /*колір кнопки 2*/
+
+    --mod-padding: 20px;/* відсутипи да контенту на мобільному */
+    --ipad-padding: 40px; /* відступи до контенту на планшеті */
+    --max-width: 1280px; /* обмеження ширини контексту для desktop */
+
+    --ver-desk-pad: 20px; /*відступи по вертикалі у секціях декстоп*/
+    --ver-mob-pad: 25px; /*відступи по вертикалі у секціях мобайл*/
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--txt-primary-color)
+}
+
+/* заголовки */
+h1 {
+    font-family: 'Kapakana', cursive;
+    font-size: 20rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+    font-weight: 300;
+}
+
+/* текст */
+p {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction:column;
+    min-height: 100dvh;
+    margin-left: auto;  /* Центрування блочного елементу по-горизонталі */
+    margin-right: auto; /* Центрування блочного елементу по-горизонталі */
+    padding: 0;         /* Внутнішній відступ для блочного елементу */
+    position: relative;
+}
+
+.container {
+    padding-left: var(--mob-padding);
+    padding-right: var(--mob-padding);
+    min-height: 100dvh;  /* УВАГА!!! Мінімальна висота секцій 100% висоти в'юпорта */
+}
+
+.container > .inside {  /* Direct child .inside in .container */
+    margin: auto;       /* Центрування по-горизонталі */
+    padding-top: 100px;
+    padding-bottom: var(--ver-padding);
+    max-width: var(--max-width);
+}
+
+header.container > .inside {  
+    padding-top: 0;
+}
+
+ footer {
+    margin-top: auto;
+    min-height: 100px;
+}
