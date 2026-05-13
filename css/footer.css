@@ -1,0 +1,100 @@
+.custom-footer {
+    background-color: var(--btn-color-01);
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.custom-footer .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 550px;
+}
+
+.footer-desc {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    color: white;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.back-to-top-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 1.4rem;
+    background-color: var(--bg-color-01);
+    color: var(--btn-color-01);
+    border-radius: 50px;
+    text-decoration: none;
+    gap: 60px;
+    
+    height: 60px;          /* Висота білої капсули */
+    padding: 0 13px 0 25px;       /* Бокові відступи всередині */
+
+    transition: all 0.3s ease;
+}
+
+/* --- 1. РОЗМІР ІКОНОК СОЦМЕРЕЖ (ІНСТАГРАМ, ЮТУБ) --- */
+.footer-socials img {
+    width: 45px;  /* Міняй цю цифру, щоб іконки стали більшими/меншими */
+    height: auto; /* Висота підлаштується пропорційно */
+}
+
+/* --- 2. РОЗМІР ЗОБРАЖЕННЯ-СТРІЛКИ ВСЕРЕДИНІ КНОПКИ --- */
+.back-to-top-button img {
+    height: 45px; /* Міняй цю цифру, щоб стрілка в кнопці стала більшою */
+    width: auto;  /* Ширина підлаштується пропорційно */
+    display: block;
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.footer-quote {
+    text-align: right;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin: 0;
+    color: white;
+}
+/* Ефекти при наведенні мишкою (hover) */
+.back-to-top-button:hover {
+    /* Ніжно-рожевий фон */
+    background-color: #fce4ec; 
+    
+    /* Анімація підстрибування (кнопка трішки піднімається вгору) */
+    transform: translateY(-5px); 
+    
+    /* Додаємо легку тінь для об'єму (за бажанням) */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,41 @@
+#s1 {
+    background-color: #fff;
+}
+
+#s1 .inside {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+#s1 h1, #s1 h2, #s1 p {
+    color: var(--txt-color-02);
+}
+
+#s1 h1 {
+    font-size: 12rem;
+}
+
+#s1 .b1 {
+    width: 100%;
+}
+
+#s1 .b1 h2 {
+    text-align: left;
+    margin-top: -1em;
+}
+
+#s1 .b2 {
+    width: 45%;
+}
+
+#s1 .b3 {
+    width: 55%;
+    padding-left: 20px;
+}
+
+#s1 .b3 img {
+    display: block;
+    width: 100%;
+}

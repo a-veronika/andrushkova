@@ -1,16 +1,20 @@
 :root {
     --txt-primary-color: #ffffff; /* колір основого тексту */
     --txt-color-02: #000000; /* колір основого тексту на фоні (інверсія) */
+    --txt-color-01: #ffffff;
     --bg-color-01: #ffffff; /* колір фону 1 */
     --bg-color-02: #000000; /* колір фону 2 */
+    --bg-color-03: #ffb8df;
     --lnk-color-01: rgb(255, 255, 255); /* коілр покликань */
     --lnk-color-02: #000000; /* коілр покликань hover */
     --btn-color-01: #FF31A2; /* колір кнопки 1 */
     --btn-color-02: #6b6b6b; /*колір кнопки 2*/
+    --bg-nav-1: #ffffff;
+    --ver-padding: 3rem;
 
     --mod-padding: 20px;/* відсутипи да контенту на мобільному */
     --ipad-padding: 40px; /* відступи до контенту на планшеті */
-    --max-width: 1280px; /* обмеження ширини контексту для desktop */
+    --max-width: 1360px; /* обмеження ширини контексту для desktop */
 
     --ver-desk-pad: 20px; /*відступи по вертикалі у секціях декстоп*/
     --ver-mob-pad: 25px; /*відступи по вертикалі у секціях мобайл*/
@@ -30,6 +34,12 @@ h1 {
     font-family: 'Kapakana', cursive;
     font-size: 20rem;
     font-weight: 300;
+    text-align: left;
+    padding: 0;
+    line-height: 1.0;
+    margin: 0 0 .5rem;
+    
+
 }
 
 h2 {
@@ -50,7 +60,7 @@ p {
 }
 
 .wrapper {
-    display: flex;
+    display: flex;  
     flex-direction:column;
     min-height: 100dvh;
     margin-left: auto;  /* Центрування блочного елементу по-горизонталі */
@@ -65,18 +75,96 @@ p {
     min-height: 100dvh;  /* УВАГА!!! Мінімальна висота секцій 100% висоти в'юпорта */
 }
 
-.container > .inside {  /* Direct child .inside in .container */
+header > .inside,
+footer > .inside,
+section > .inside {  /* Direct child .inside in .container */
     margin: auto;       /* Центрування по-горизонталі */
-    padding-top: 100px;
+    padding-top: var(--ver-padding);
     padding-bottom: var(--ver-padding);
+    padding-left: var(--ipad-padding);
+    padding-right: var(--ipad-padding);
     max-width: var(--max-width);
 }
 
 header.container > .inside {  
-    padding-top: 0;
+    padding-top: 60px;
 }
 
  footer {
     margin-top: auto;
     min-height: 100px;
+}
+.custom-footer {
+    background-color: #e94b9b; /* Ваш рожевий */
+    width: 100%;
+    min-height: 50vh; /* Половина висоти екрана */
+    display: flex;
+    align-items: center;
+    color: white !important;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between; /* Розносить колонки вліво і вправо */
+    align-items: flex-end;         /* Притискає вміст колонок до низу */
+    width: 100%;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+/* Налаштування лівої колонки */
+.footer-col-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Простір між верхнім текстом і іконками */
+    max-width: 600px;
+}
+
+.footer-text-top {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin: 0;
+    color: white !important;
+}
+
+.footer-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-social-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.footer-social-links img {
+    width: 35px;
+}
+
+/* Налаштування правої колонки */
+.footer-col-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Вирівнює слоган і кнопку по правому краю */
+    gap: 40px;
+}
+
+.footer-slogan-text {
+    text-align: right;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 0;
+    color: white !important;
+}
+
+/* Кнопка "На головну" */
+.footer-btn-top img {
+    height: 75px; /* Розмір вашої білої кнопки з картинки */
+    width: auto;
+    display: block;
 }

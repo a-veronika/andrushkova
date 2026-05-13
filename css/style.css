@@ -14,20 +14,28 @@
 
 /* КНОПКИ */
 .button {
+  display: inline-block;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 1.4rem;
   color: white;
   text-decoration: none;
   background-color: var(--btn-color-01);
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   margin: 0.5rem;
   border-radius: 30px;
-  transition: background-color 0.3s, transform 0.2s;
+
+  transition: all 0.3s ease;
 }
 
 .button:hover {
-  background-color: var(--btn-color-02);
-  transform: scale(1.05);
+  background-color: #fce4ec; /* Світло-рожевий фон */
+  color: var(--bg-color-02); /* ТЕМНИЙ ТЕКСТ (тепер його буде видно!) */
+  
+  transform: translateY(-5px); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  
+  cursor: pointer; 
 }
 
 .row {

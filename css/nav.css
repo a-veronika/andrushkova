@@ -3,7 +3,7 @@ nav {
     background: transparent;
     background-repeat: no-repeat;
     background-position: bottom;
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 95;
 }
@@ -103,9 +103,9 @@ nav .navbar {
 
 .navigation a {
     display: block;
-    color: var(--nav-color-1);  /* Основний колір меню */
+    color: var(--txt-color-02);  /* Основний колір меню */
     font-size: .9rem;           /* Розмір тексту меню */
-    font-weight: 300;           /* товщина тексту меню */
+    font-weight: 400;           /* товщина тексту меню */
     letter-spacing: .025em;
     padding: 8px 0 10px;
     margin-left: 80px;
@@ -115,7 +115,7 @@ nav .navbar {
 }
 
 .navigation a:hover {
-    color: var(--lnk-color-02); /* Основний колір меню (hover) */
+    color: var(--btn-color-01); /* Основний колір меню (hover) */
 }
 
 .topfixed .navigation a {

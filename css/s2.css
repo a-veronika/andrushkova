@@ -1,0 +1,130 @@
+#s2 {
+    background-color: var(--bg-color-03);
+}
+#s4{
+    background-color: var(--bg-color-03);
+}
+#s6{
+    background-color: var(--bg-color-03);
+}
+section:not(#s1) {
+    position: relative;
+}
+
+section:not(#s1) .inside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section:not(#s1) h1, section:not(#s1) h2, section:not(#s1) p {
+    color: var(--txt-color-02);
+}
+
+section:not(#s1) h1 {
+    font-size: 15rem;
+}
+section:not(#s1) h2 {
+font-weight: 400;
+}
+section:not(#s1) .b1 {
+    width: 100%;
+}
+
+section:not(#s1) .b1 h2 {
+    margin-top: -1.5em;
+}
+section:not(#s1) .b2 .txt-box{
+    color: var(--txt-primary-color);
+}
+section:not(#s1) .b2 {
+    width: 50%;
+    align-self: center;
+}
+
+.txt-box {
+    background-color: var(--btn-color-01);
+    padding: 2rem;
+    border-radius: 50px;
+}
+
+#s2 .txt-box {
+    padding-right: 25%;
+}
+
+section:not(#s1) .b3 {
+    max-width: 500px;
+}
+
+section:not(#s1) .b3 h3 {
+    font-style: italic;
+    font-size: 2rem;
+    color: var(--btn-color-01);
+    font-weight: 500;
+}
+ul{
+    list-style: none;
+}
+section:not(#s1) li::before {
+    content:"- ";
+}
+section:not(#s1) .b3 ul {
+    color: var(--txt-color-02);
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+#s2 .img-box{
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 47%;
+    z-index: 1;
+}
+#s3 .img-box{
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 54%;
+    z-index: 1;
+}
+#s4 .img-box{
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 47%;
+    z-index: 1;
+}
+#s5 .img-box{
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 44%;
+    z-index: 1;
+}
+#s6 .img-box{
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 55%;
+    z-index: 1;
+}
+#s7 .img-box{
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 55%;
+    z-index: 1;
+}
+/*section:not(#s1) .img-box {
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 47%;
+    z-index: 1;
+}*/
+
+section:not(#s1) .img-box img {
+    display: block;
+    width:100%;
+}
+
