@@ -37,15 +37,26 @@ section:not(#s1) .b1 h2 {
 section:not(#s1) .b2 .txt-box{
     color: var(--txt-primary-color);
 }
+
 section:not(#s1) .b2 {
     width: 50%;
     align-self: center;
+}
+
+#top section.other .b2 {
+    width: 55%;
+    align-self: flex-end;
+    margin-right: 22%;
 }
 
 .txt-box {
     background-color: var(--btn-color-01);
     padding: 2rem;
     border-radius: 50px;
+}
+
+#top section.other .txt-box {
+    padding-right: 100px;
 }
 
 #s2 .txt-box {

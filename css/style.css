@@ -1,6 +1,3 @@
-
-
-
 /* ШРИФТИ */
 .kapakana {
   font-family: 'Kapakana', cursive;
@@ -29,8 +26,8 @@
 }
 
 .button:hover {
-  background-color: #fce4ec; /* Світло-рожевий фон */
-  color: var(--bg-color-02); /* ТЕМНИЙ ТЕКСТ (тепер його буде видно!) */
+  background-color: #fce4ec; 
+  color: var(--bg-color-02);
   
   transform: translateY(-5px); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
